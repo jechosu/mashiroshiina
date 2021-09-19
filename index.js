@@ -6,6 +6,10 @@ const { token } = require('./config.json');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 const Discord = require('discord.js');
+
+client.on('ready', () => {
+client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
+});
  
 const prefix = '!';
  
