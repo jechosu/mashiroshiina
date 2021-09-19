@@ -8,7 +8,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const Discord = require('discord.js');
 
 client.on('ready', () => {
-client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
+client.user.setPresence({ activity: { name: 'Ready to go! | prefix is !' }, status: 'online' });
 });
  
 const prefix = '!';
