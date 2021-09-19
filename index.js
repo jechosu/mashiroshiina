@@ -7,7 +7,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 const Discord = require('discord.js');
  
-const prefix = '-';
+const prefix = '!';
  
 const fs = require('fs');
  
