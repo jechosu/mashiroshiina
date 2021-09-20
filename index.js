@@ -43,7 +43,7 @@ client.on('message', message =>{
         client.commands.get('play').execute(message,args);
     } else if (command === 'leave') {
         client.commands.get('leave').execute(message,args);
-    } else if (command === 'what can i say') {
+    } else if (command === 'commands') {
         client.commands.get('commands').execute(message,args);
     }
 
