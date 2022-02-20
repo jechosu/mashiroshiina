@@ -26,10 +26,6 @@ for(const file of commandFiles){
  
     client.commands.set(command.name, command);
 }
- 
- client.on('ready', () => {
-client.user.setPresence({ activity: { name: 'stable build' }, status: 'online' });
-});
 
 client.on('message', message => {
 const user = message.mentions.users.first();
