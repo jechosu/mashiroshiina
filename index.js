@@ -27,11 +27,6 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
-client.on('message', message => {
-const user = message.mentions.users.first();
-client.users.cache.get('<id>');
-mention = message.mentions.users.first();
- 
 client.once('ready', () => {
     console.log('Bot is online!');
 });
